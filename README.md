@@ -27,5 +27,8 @@ node stores/2_structured_modules/app.js
 Integrates with Todo Service and uses redux-thunk middleware to handle async calls
 
 ```
+#todo service can be run using
+docker run -p 8080:8080 -d skhatri/todo:0.1
+
 node stores/3_async/app.jss
 ```
