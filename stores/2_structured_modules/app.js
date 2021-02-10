@@ -1,13 +1,12 @@
-const bind = require("./bind.js");
-const { dispatch } = bind;
+import {shared} from './action_creators.js';
+import {dispatch} from './bind.js';
 
-const action_creators = require("./action_creators");
 const {
-  addTodo,
-  setVisibilityFilter,
-  completeTodo,
-  toggleTodo,
-} = action_creators;
+    addTodo,
+    setVisibilityFilter,
+    completeTodo,
+    toggleTodo,
+} = shared;
 
 //run
 dispatch(addTodo("test1"));

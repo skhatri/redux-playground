@@ -1,5 +1,5 @@
 //npm install redux
-const redux = require("redux");
+import redux from 'redux';
 const { combineReducers, createStore } = redux;
 //reducers
 function visibilityFilter(state = "SHOW_ALL", action) {
@@ -92,10 +92,3 @@ store.dispatch(toggleTodo(1));
 store.dispatch(completeTodo(2));
 store.dispatch(completeTodo(0));
 store.dispatch(setVisibilityFilter("SHOW_COMPLETED"));
-
-module.exports = {
-  addTodo: addTodo,
-  toggleTodo: toggleTodo,
-  setVisibilityFilter: setVisibilityFilter,
-  completeTodo: completeTodo,
-};

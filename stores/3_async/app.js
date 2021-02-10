@@ -1,7 +1,7 @@
-const bind = require("./bind.js");
+import {bind} from "./bind.js";
 const { dispatch } = bind;
 
-const action_creators = require("./action_creators");
+import action_creators from "./action_creators.js";
 const {
   addTodo,
   setVisibilityFilter,

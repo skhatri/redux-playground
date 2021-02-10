@@ -15,7 +15,7 @@ function completeTodo(index) {
   return { type: "COMPLETE_TODO", index };
 }
 
-module.exports = {
+export const shared = {
   addTodo: addTodo,
   toggleTodo: toggleTodo,
   setVisibilityFilter: setVisibilityFilter,
